@@ -24,3 +24,6 @@ exnet-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+# Exclude generated code from Unifex
+c_src/**/_generated
