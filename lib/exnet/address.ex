@@ -6,13 +6,13 @@ defmodule Exnet.Address do
   defstruct [:host, :port]
 
   @doc """
-  Creates a Address with a resolved host. This means you can connect
-  to domain names and ip addressess.
+  Creates an address with a resolved host. This means you can connect
+  to domain names and ip addresses.
 
-  #### Warning (: .warning)
-  DO NOT create the Address struct without the create function.
-  This function calls enet internals to ensure the hosts integer
-  is set correctly.
+  > #### Warning {: .warning}
+  > DO NOT create the Address struct without the create function.
+  > This function calls enet internals to ensure the hosts integer
+  > is set correctly.
 
   ## Examples
       iex> address = Exnet.Address.create("127.0.0.1", 1300)
