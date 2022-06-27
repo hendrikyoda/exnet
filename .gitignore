@@ -25,5 +25,8 @@ exnet-*.tar
 # Temporary files, for example, from tests.
 /tmp/
 
+# VS Code
+.vscode
+
 # Exclude generated code from Unifex
 c_src/**/_generated
