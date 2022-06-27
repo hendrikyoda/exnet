@@ -2,6 +2,7 @@ defmodule Exnet do
   @moduledoc """
   Documentation for `Exnet`.
   """
+  use Unifex.Loader
 
   @doc """
   Hello world.

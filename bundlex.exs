@@ -9,8 +9,11 @@ defmodule Exnet.BundlexProject do
 
   def natives(_platform) do
     [
-      native: [
-        sources: ["native.c"],
+      exnet: [
+        sources: ["exnet.c"],
+        includes: ["enet/include"],
+        lib_dirs: ["enet/.libs"],
+        libs: ["enet"],
         interface: [:nif, :cnode],
         preprocessor: Unifex
       ]
